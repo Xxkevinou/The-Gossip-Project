@@ -1,0 +1,9 @@
+<h1>Gossip page</h1>
+<p>Bienvenue, voici nos potins:</p> 
+<% @lespotin.each do |gossip| %>
+        <p>
+          <a href="/gossips/<%= index %>">
+          <%= gossip.content %> <br/></a>
+          écrit par: <%= gossip.author %>
+        </p>
+      <% end %>
