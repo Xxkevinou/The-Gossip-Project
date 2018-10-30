@@ -2,7 +2,8 @@
 <p>Bienvenue, voici nos potins:</p> 
 <% @lespotin.each do |gossip| %>
         <p>
-          <%= gossip.content %> <br/>
-          écrit par: <%= gossip.author %>
+          <%= gossip.content %><br/>
+          écrit par: <%= gossip.author %><br/>
+          <%= link_to "`***`", "/gossip/show/#{gossip.id}" %>
         </p>
       <% end %>
